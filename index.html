@@ -2,28 +2,99 @@
 layout: default
 title: Home
 ---
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<h1>Welcome to My Portfolio</h1>
-<p>This is my personal portfolio showcasing my work.</p>
+<style>
+    body {
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-<div class="links">
-    <h2>Projects</h2>
-    <ul>
-        <li><a href="https://github.com/ylo16">My GitHub Repositories</a></li>
-    </ul>
-</div>
+    .container {
+        margin-top: 80px;
+    }
 
-<div class="aboutMe">
-    <h2>About Me</h2>
-    <p>Hello! My name is Yair Lopez. I am a Computer Science student interested in software engineering and database systems.</p>
-</div>
+    h1 {
+        font-size: 42px;
+        margin-bottom: 10px;
+    }
 
-<div class="contacts">
-    <h2>Contact</h2>
-    <p>Email: lopez16y@gmail.com</p>
-</div>
+    .subtitle {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 40px;
+    }
 
-<div class="resume">
-    <h2>Resume</h2>
-    <p><a href="material/Resume-2026-Yair-Lopez.pdf">View My Resume (PDF)</a></p>
+    .button-container {
+        margin-top: 30px;
+    }
+
+    .action-button {
+        display: inline-block;
+        padding: 14px 28px;
+        margin: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        background: linear-gradient(135deg, #1f1f1f, #2c3e50);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .action-button i {
+        margin-right: 8px;
+    }
+
+    .action-button:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .about {
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 1.6;
+        color: #444;
+    }
+</style>
+
+<div class="container">
+
+    <h1>Yair Lopez</h1>
+    <p class="subtitle">Computer Science Student | Software Engineering | Database Systems</p>
+
+    <div class="about">
+        <p>
+            Hello! I'm passionate about building clean, efficient software and 
+            designing structured database systems. I enjoy backend and frontend development, 
+            problem solving, as well as creating real-world applications.
+        </p>
+    </div>
+
+    <div class="button-container">
+
+        <!-- Resume -->
+        <button class="action-button"
+            onclick="window.open('material/Resume-2026-Yair-Lopez.pdf', '_blank')">
+            <i class="fa-solid fa-file"></i> View Resume
+        </button>
+
+        <!-- GitHub -->
+        <button class="action-button"
+            onclick="window.open('https://github.com/ylo16', '_blank')">
+            <i class="fa-brands fa-github"></i> GitHub
+        </button>
+
+        <!-- Email -->
+        <button class="action-button"
+            onclick="window.location.href='mailto:lopez16y@gmail.com'">
+            <i class="fa-solid fa-envelope"></i> Email Me
+        </button>
+
+    </div>
+    
 </div>
